@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Digital Studio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Nova Digital Studio</h1>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h2>Impulsamos tu presencia digital</h2>
+        <p>Diseñamos sitios web modernos, funcionales y orientados a resultados para marcas y emprendimientos.</p>
+        <a href="#contacto" class="btn">Solicitar cotización</a>
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2>Nuestros servicios</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Diseño web</h3>
+            <p>Creación de sitios modernos, responsivos y enfocados en la experiencia del usuario.</p>
+          </article>
+          <article class="card">
+            <h3>Marketing digital</h3>
+            <p>Estrategias para aumentar visibilidad, posicionamiento y captación de clientes.</p>
+          </article>
+          <article class="card">
+            <h3>Branding</h3>
+            <p>Desarrollo de identidad visual coherente para fortalecer la imagen de marca.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portafolio" class="section alt-bg">
+      <div class="container">
+        <h2>Portafolio</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Tienda online artesanal</h3>
+            <p>Desarrollo de landing y catálogo para emprendimiento local.</p>
+          </article>
+          <article class="card">
+            <h3>Estudio creativo</h3>
+            <p>Rediseño de sitio corporativo con enfoque visual y responsive.</p>
+          </article>
+          <article class="card">
+            <h3>Consultora profesional</h3>
+            <p>Implementación de formulario de contacto y optimización de estructura web.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section">
+      <div class="container">
+        <h2>Sobre nosotros</h2>
+        <p>En Nova Digital Studio trabajamos creando soluciones digitales pensadas para empresas y emprendedores que buscan destacar en internet. Nuestro enfoque combina diseño, funcionalidad y comunicación efectiva.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="section alt-bg">
+      <div class="container">
+        <h2>Solicita una cotización</h2>
+        <form id="formularioContacto" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <small class="error" id="errorNombre"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo">
+            <small class="error" id="errorCorreo"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio">
+              <option value="">Seleccione una opción</option>
+              <option value="diseno">Diseño web</option>
+              <option value="marketing">Marketing digital</option>
+              <option value="branding">Branding</option>
+            </select>
+            <small class="error" id="errorServicio"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+            <small class="error" id="errorMensaje"></small>
+          </div>
+
+          <button type="submit" class="btn">Enviar solicitud</button>
+          <p id="mensajeExito" class="success"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Nova Digital Studio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
